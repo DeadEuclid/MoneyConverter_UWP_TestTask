@@ -1,0 +1,54 @@
+﻿<UserControl
+    x:Class="MoneyConverter.Views.MoneyConverterView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoneyConverter.Views"
+    xmlns:fa="http://schemas.fontawesome.com/icons/"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+    mc:Ignorable="d"
+    d:DesignHeight="500"
+    d:DesignWidth="350"
+    Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="10*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
+        
+            <Grid Grid.Row="0" Grid.Column="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="CountMoney1" Grid.Row="0" MinWidth="30" Margin="0,0,0,54" Grid.RowSpan="2" ></TextBlock>
+            <TextBlock x:Name="Valute1"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock x:Name="ChangeValute1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                             Text="Изменить &#xA;  валюту" Foreground="#FF230FDD"/>
+        </Grid>
+        <Image Source="//Assets/arrow-alt-h-solid.svg" Height="20" Width="100" Grid.Row="0" Grid.Column="1"></Image>
+            <Grid Grid.Row="0" Grid.Column="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="CountMoney2" HorizontalAlignment="Center" VerticalAlignment="Center" Text=""></TextBlock>
+            <TextBlock x:Name="Valute2"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="ChangeValute2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+                             Text="Изменить &#xA;  валюту" Foreground="#FF230FDD"/>
+        </Grid>
+
+
+    </Grid>
+
+</UserControl>
