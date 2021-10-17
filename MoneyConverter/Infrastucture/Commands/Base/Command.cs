@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace MoneyConverter.Infrastucture.Comands.Base
 {
-    abstract class Command : ICommand
+     class Command : ICommand
     {
         private readonly Action<object> _Execute;
         private readonly Func<object, bool> _CanExecute;

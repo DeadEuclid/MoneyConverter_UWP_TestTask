@@ -6,8 +6,12 @@
     xmlns:views="using:MoneyConverter.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:VM="using:MoneyConverter.ViewModels.WindowsVM"
     mc:Ignorable="d"
-    Background="White" d:DesignWidth="320" d:DesignHeight="480"
->
-
+    > 
+    
+    <Page.DataContext>
+        <VM:MainPageVM />
+    </Page.DataContext>
+    
 </Page>
