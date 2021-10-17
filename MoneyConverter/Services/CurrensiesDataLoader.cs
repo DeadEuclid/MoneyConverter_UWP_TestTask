@@ -12,7 +12,7 @@ namespace MoneyConverter.Services
 {
     class CurrensiesDataLoader : ICurrensiesDataLoader
     {
-        private HttpClient _client;
+        private HttpClient _client = new HttpClient();
         CurrensiesDataLoader()
         {
 
@@ -20,8 +20,8 @@ namespace MoneyConverter.Services
         public IEnumerable<Сurrency> GetСurrencies()
         {
             _client.BaseAddress =new Uri("https://www.cbr-xml-daily.ru/");
-            _client.GetAsync("/daily_json.js");
-            throw new NotImplementedException();
+            var  respounse= _client.GetAsync("/daily_json.js");
+
         }
     }
 }
