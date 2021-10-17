@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MoneyConverter.Models
 {
-    public struct Сurrency
+    public struct Currency
     {
-        public Сurrency(string code, string name, double rubPerUnit)
+        public Currency(string code, string name, double rubPerUnit)
         {
             Code = code;
             Name = name;

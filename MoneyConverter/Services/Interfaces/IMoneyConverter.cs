@@ -4,6 +4,6 @@ namespace MoneyConverter.Services
 {
     interface IMoneyConverter
     {
-        double CurrencyConvert(Сurrency fromCurrency, Сurrency inCurrency, double value);
+        double CurrencyConvert(Currency fromCurrency, Currency inCurrency, double value);
     }
 }
