@@ -6,7 +6,6 @@
     xmlns:fa="http://schemas.fontawesome.com/icons/"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    
     mc:Ignorable="d"
     d:DesignHeight="500"
     d:DesignWidth="350"
@@ -30,10 +29,10 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <TextBlock x:Name="CountMoney1" Grid.Row="0" MinWidth="30" Margin="0,0,0,54" Grid.RowSpan="2" ></TextBlock>
+            <TextBox x:Name="CountMoney1" Grid.Row="0"  MinWidth="60" Height="40" TextAlignment="Center" Background="White" BorderBrush="White"  FontSize="20" SelectionHighlightColor="White"  />
             <TextBlock x:Name="Valute1"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            <TextBlock x:Name="ChangeValute1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-                             Text="Изменить &#xA;  валюту" Foreground="#FF230FDD"/>
+            <TextBlock x:Name="ChangeValute1" Grid.Row="2" Margin="10" TextAlignment="Center"  HorizontalAlignment="Center" VerticalAlignment="Center"
+                             Text="Изменить валюту" TextWrapping="Wrap" Foreground="#FF230FDD" />
         </Grid>
         <Image Source="//Assets/arrow-alt-h-solid.svg" Height="20" Width="100" Grid.Row="0" Grid.Column="1"></Image>
             <Grid Grid.Row="0" Grid.Column="2" >
@@ -42,10 +41,11 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <TextBlock x:Name="CountMoney2" HorizontalAlignment="Center" VerticalAlignment="Center" Text=""></TextBlock>
+            <TextBox x:Name="CountMoney2" Grid.Row="0"  MinWidth="60" Height="40" TextAlignment="Center" Background="White" BorderBrush="White"  FontSize="20" SelectionHighlightColor="White"  />
+
             <TextBlock x:Name="Valute2"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock x:Name="ChangeValute2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-                             Text="Изменить &#xA;  валюту" Foreground="#FF230FDD"/>
+            <TextBlock x:Name="ChangeValute2" Grid.Row="2" Margin="10" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"
+                             Text="Изменить валюту" TextWrapping="Wrap"  Foreground="#FF230FDD"/>
         </Grid>
 
 

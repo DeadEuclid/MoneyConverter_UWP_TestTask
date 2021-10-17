@@ -119,14 +119,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Infrastucture\Comands\Base\Command.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Infrastucture\Commands\Base\Command.cs" />
+    <Compile Include="Infrastucture\Commands\StartLoadCurreniesComand.cs" />
+    <Compile Include="Views\Wondows\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Сurrency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CurrensiesDataLoader.cs" />
+    <Compile Include="Services\Interfaces\IMoneyConverter.cs" />
     <Compile Include="Services\Interfaces\ICurrensiesDataLoader.cs" />
+    <Compile Include="Services\MoneyConverter.cs" />
+    <Compile Include="ViewModels\MoneyConverterVM.cs" />
     <Compile Include="Views\LoadingView.xaml.cs">
       <DependentUpon>LoadingView.xaml</DependentUpon>
     </Compile>
@@ -158,7 +162,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="Themes\MoneyConverterTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Wondows\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -188,7 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\WindowsVM\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

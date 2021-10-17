@@ -8,7 +8,7 @@ namespace MoneyConverter.Models
 {
     public struct Сurrency
     {
-        public Сurrency(string code, string name, decimal rubPerUnit)
+        public Сurrency(string code, string name, double rubPerUnit)
         {
             Code = code;
             Name = name;
@@ -17,7 +17,7 @@ namespace MoneyConverter.Models
 
         public string Code { get; }
         public string Name { get; }
-        public decimal RubPerUnit{get;}
+        public double RubPerUnit{get;}
 
     }
 }
