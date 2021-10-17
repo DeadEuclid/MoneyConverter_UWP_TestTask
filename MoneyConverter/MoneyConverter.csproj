@@ -122,8 +122,10 @@
     <Compile Include="Infrastucture\Commands\Base\Command.cs" />
     <Compile Include="Data\ModelsJson\CurrenciesJson.cs" />
     <Compile Include="Data\ModelsJson\CurrencyJson.cs" />
+    <Compile Include="ViewModels\Base\ViewModel.cs" />
+    <Compile Include="ViewModels\Base\ITitledVM.cs" />
     <Compile Include="ViewModels\WindowsVM\MainPageVM.cs" />
-    <Compile Include="Views\Wondows\MainPage.xaml.cs">
+    <Compile Include="Views\Windows\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Currency.cs" />
@@ -168,7 +170,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Wondows\MainPage.xaml">
+    <Page Include="Views\Windows\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

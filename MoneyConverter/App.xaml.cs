@@ -72,6 +72,7 @@ namespace MoneyConverter
                 // Обеспечение активности текущего окна
                 Window.Current.Activate();
             }
+            
         }
 
         /// <summary>
