@@ -1,10 +1,11 @@
 ﻿using MoneyConverter.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MoneyConverter.Services
 {
     interface ICurrensiesDataLoader
     {
-        IEnumerable<Сurrency> GetСurrencies();
+        Task<IEnumerable<Currency>> GetСurrenciesAsync();
     }
 }

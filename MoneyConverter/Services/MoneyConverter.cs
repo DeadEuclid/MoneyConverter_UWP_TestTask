@@ -9,6 +9,6 @@ namespace MoneyConverter.Services
 {
     class MoneyConverter : IMoneyConverter
     {
-        public double CurrencyConvert(Сurrency fromCurrency, Сurrency inCurrency, double value) => (fromCurrency.RubPerUnit * value) / inCurrency.RubPerUnit;
+        public double CurrencyConvert(Currency fromCurrency, Currency inCurrency, double value) => (fromCurrency.RubPerUnit * value) / inCurrency.RubPerUnit;
     }
 }

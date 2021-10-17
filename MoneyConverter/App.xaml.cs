@@ -28,6 +28,7 @@ namespace MoneyConverter
         /// </summary>
         public App()
         {
+
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }

@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Name="ChangeValuteButton" TargetType="TextBlock">
+        <Style.Setters>
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Text" Value="Изменить валюту"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Foreground" Value="#FF230FDD"/>
+        </Style.Setters>
+    </Style>
+</ResourceDictionary>
