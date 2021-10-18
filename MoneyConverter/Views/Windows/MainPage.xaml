@@ -13,5 +13,7 @@
     <Page.DataContext>
         <VM:MainPageVM />
     </Page.DataContext>
-    
+    <!--<DataTemplate x:DataType="VM:MainPageVM">
+        <>
+    </DataTemplate>-->
 </Page>
