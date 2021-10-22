@@ -124,6 +124,7 @@
     <Compile Include="Data\ModelsJson\CurrencyJson.cs" />
     <Compile Include="ViewModels\Base\ViewModel.cs" />
     <Compile Include="ViewModels\Base\ITitledVM.cs" />
+    <Compile Include="ViewModels\LoadingVM.cs" />
     <Compile Include="ViewModels\ValuteSelectVM.cs" />
     <Compile Include="ViewModels\WindowsVM\MainPageVM.cs" />
     <Compile Include="Views\Windows\MainPage.xaml.cs">

@@ -4,17 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MoneyConverter"
     xmlns:VM="using:MoneyConverter.ViewModels"
-    xmlns:views="using:MoneyConverter.Views">
-    <Application.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:DataType="VM:MoneyConverterVM" x:Key="moneyConverter">
-                <views:MoneyConverterView/>
-            </DataTemplate>
-            <!--<DataTemplate x:DataType="VM:ValuteSelectVM" x:Key="valuteSelect">
-                <views:MoneyConverterView/>
-            </DataTemplate>-->
-            
-        </ResourceDictionary>
-    </Application.Resources>
+    xmlns:views="using:MoneyConverter.Views"
+    xmlns:WVM="using:MoneyConverter.ViewModels.WindowsVM">
 </Application>
     

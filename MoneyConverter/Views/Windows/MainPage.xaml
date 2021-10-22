@@ -8,12 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:VM="using:MoneyConverter.ViewModels.WindowsVM"
     mc:Ignorable="d"
-    > 
-    
-    <Page.DataContext>
-        <VM:MainPageVM />
-    </Page.DataContext>
-    <!--<DataTemplate x:DataType="VM:MainPageVM">
-        <>
-    </DataTemplate>-->
+    >
+
+
+
 </Page>

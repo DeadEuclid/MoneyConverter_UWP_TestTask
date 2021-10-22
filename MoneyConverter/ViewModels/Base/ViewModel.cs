@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MoneyConverter.ViewModels.Base
 {
-    abstract class ViewModel : INotifyPropertyChanged
+    public abstract class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
