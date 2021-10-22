@@ -25,6 +25,7 @@ namespace MoneyConverter
         public MainPage()
         {
             this.InitializeComponent();
+   
         }
     }
 }

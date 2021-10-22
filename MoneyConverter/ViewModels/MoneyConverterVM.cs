@@ -10,27 +10,29 @@ using Windows.UI.Xaml.Controls;
 
 namespace MoneyConverter.ViewModels
 {
-    class MoneyConverterVM:ViewModel
+   public class MoneyConverterVM:ViewModel,ITitledVM
     {
-        MoneyConverterVM()
+
+        public string Title { get; } = "Выбор валюты";
+        private double _Value1;
+        public double Value1
         {
-            View = new ValuteSelectView();
+            get => _Value1;
+            set
+            {
+                Set(ref _Value1, value);
+            }
         }
-        public string Title { get; }
-        public UserControl View { get; private set; }
-        public Command ChangeValuteCommand = new Command(OnChangeValute);
 
-        public MoneyConverterVM(changeValuteHandler changeValute)
+        private double _Value2;
+        public double Value2
         {
-            ChangeValute += changeValute;
+            get => _Value2;
+            set
+            {
+                Set(ref _Value2, value);
+            }
         }
 
-        public event changeValuteHandler ChangeValute;
-        public delegate void changeValuteHandler();
-private static void OnChangeValute(object obj)
-        {
-
-
-        }
     }
 }
